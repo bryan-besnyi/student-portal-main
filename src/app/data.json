@@ -1,0 +1,136 @@
+[
+    {
+      "title": "Canvas",
+      "image": "canvas_image_url",
+      "description": "Canvas is a learning management system.",
+      "largeDescription": "Canvas is a powerful learning management system (LMS) widely used in educational institutions. It provides a user-friendly platform for teachers and students to interact, manage course materials, submit assignments, and engage in collaborative learning. With features like discussion forums, real-time quizzes, and integrated multimedia support, Canvas enhances the overall online learning experience.",
+      "link": "https://canvas.com"
+    },
+    {
+      "title": "DegreeWorks",
+      "image": "degreeworks_image_url",
+      "description": "DegreeWorks helps students track their academic progress.",
+      "largeDescription": "DegreeWorks is a comprehensive academic advising and degree audit tool designed to assist students in understanding their progress toward graduation. It provides a clear visual representation of completed and remaining course requirements, empowering students to make informed decisions about their academic journey. With DegreeWorks, students and advisors can collaboratively plan coursework to ensure timely graduation.",
+      "link": "https://degreeworks.com"
+    },
+    {
+      "title": "Student Gmail",
+      "image": "gmail_image_url",
+      "description": "Student Gmail provides email services for students.",
+      "largeDescription": "Student Gmail offers a secure and reliable email communication platform specifically tailored for students. With features such as a spacious mailbox, seamless integration with other Google services, and robust spam filters, students can effectively manage their communication needs. The intuitive interface and accessibility across devices make Student Gmail a convenient and essential tool for staying connected within the academic community.",
+      "link": "https://gmail.com"
+    },
+    {
+      "title": "WebSMART",
+      "image": "websmart_image_url",
+      "description": "WebSMART is a student information system.",
+      "largeDescription": "WebSMART serves as a comprehensive student information system, facilitating efficient management of student data and administrative processes. From class registration and grading to financial aid tracking, WebSMART streamlines key aspects of academic administration. Its user-friendly interface and robust reporting capabilities empower administrators to make data-driven decisions, contributing to the overall efficiency of educational institutions.",
+      "link": "https://websmart.com"
+    },
+    {
+      "title": "WebSchedule",
+      "image": "webschedule_image_url",
+      "description": "WebSchedule helps students plan their class schedules.",
+      "largeDescription": "WebSchedule simplifies the class scheduling process for students by providing a user-friendly interface to browse and select courses. With features such as schedule optimization and conflict resolution, students can create personalized schedules that align with their academic and personal commitments. WebSchedule enhances the overall student experience by making the registration process seamless and efficient.",
+      "link": "https://webschedule.com"
+    },
+    {
+      "title": "Student Success Link",
+      "image": "success_link_image_url",
+      "description": "Student Success Link supports student success initiatives.",
+      "largeDescription": "Student Success Link is a holistic platform designed to support student success initiatives within educational institutions. From academic support resources to career guidance, the platform offers a centralized hub for students to access the tools and information they need to thrive. Student Success Link fosters a collaborative approach among students, faculty, and staff to create a supportive and enriching academic environment.",
+      "link": "https://successlink.com"
+    },
+    {
+      "title": "Virtual Campus",
+      "image": "virtual_campus_image_url",
+      "description": "Virtual Campus provides online learning resources.",
+      "largeDescription": "Virtual Campus is a dynamic online learning environment that extends educational resources beyond the physical campus. It hosts a diverse range of multimedia content, interactive simulations, and virtual labs to enhance the learning experience. Virtual Campus fosters a sense of community through virtual events and collaborative projects, creating an engaging and inclusive learning environment for students in the digital era.",
+      "link": "https://virtualcampus.com"
+    },
+    {
+      "title": "Accudemia",
+      "image": "accudemia_image_url",
+      "description": "Accudemia is a platform for academic support and tutoring.",
+      "largeDescription": "Accudemia is a comprehensive platform dedicated to academic support and tutoring services. It connects students with qualified tutors, provides scheduling tools for appointments, and tracks academic progress. Through personalized support plans and collaborative learning opportunities, Accudemia contributes to the academic success of students by offering tailored assistance in challenging subjects.",
+      "link": "https://accudemia.com"
+    },
+    {
+      "title": "My Majors",
+      "image": "mymajors_image_url",
+      "description": "My Majors helps students explore and choose academic majors.",
+      "largeDescription": "My Majors is a valuable resource for students navigating the complexities of choosing an academic major. Through comprehensive assessments, career exploration tools, and personalized guidance, My Majors assists students in making informed decisions about their educational and professional paths. The platform aims to empower students to align their passions and skills with meaningful and fulfilling academic pursuits.",
+      "link": "https://mymajors.com"
+    },
+    {
+      "title": "Library Pass Comics Plus",
+      "image": "librarypass_image_url",
+      "description": "Library Pass Comics Plus offers access to digital comics in the library.",
+      "largeDescription": "Library Pass Comics Plus is a digital library that provides students with access to a vast collection of digital comics. From graphic novels to classic comic book series, the platform offers an immersive and entertaining reading experience. Library Pass Comics Plus aims to promote literacy and creativity by making diverse and engaging content accessible to students through the convenience of a digital platform.",
+      "link": "https://librarypass.com"
+    },
+    {
+      "title": "Office 365",
+      "image": "office365_image_url",
+      "description": "Office 365 provides productivity tools and services.",
+      "largeDescription": "Office 365 is a comprehensive suite of productivity tools that empowers students and educators with collaborative solutions. From document creation and sharing to communication and project management, Office 365 enhances the efficiency of academic and administrative tasks. With cloud-based accessibility, students can seamlessly collaborate on projects, fostering a digital ecosystem that supports learning and collaboration.",
+      "link": "https://office365.com"
+    },
+    {
+      "title": "OneSearch",
+      "image": "onesearch_image_url",
+      "description": "OneSearch is a unified search tool for academic resources.",
+      "largeDescription": "OneSearch revolutionizes the research process by providing a unified search tool for academic resources. It aggregates content from various databases, libraries, and online sources, offering students a streamlined and efficient way to discover relevant scholarly material. OneSearch simplifies the search experience, allowing students to access a wealth of academic resources with ease and precision.",
+      "link": "https://onesearch.com"
+    },
+    {
+      "title": "RaveMobile",
+      "image": "ravemobile_image_url",
+      "description": "RaveMobile is a safety and emergency notification system.",
+      "largeDescription": "RaveMobile is a crucial component of campus safety, providing a comprehensive emergency notification system. From instant alerts to real-time updates, RaveMobile ensures that students and faculty are informed and prepared in case of emergencies. By leveraging cutting-edge communication technology, RaveMobile contributes to creating a secure and resilient campus environment.",
+      "link": "https://ravemobile.com"
+    },
+    {
+      "title": "Panopto",
+      "image": "panopto_image_url",
+      "description": "Panopto is a video platform for recording and sharing lectures.",
+      "largeDescription": "Panopto revolutionizes the lecture experience by offering a robust video platform for recording, storing, and sharing academic content. From lectures and presentations to interactive multimedia, Panopto provides a versatile solution for educators to create engaging and accessible learning materials. The platform enhances the overall educational experience by making course content available anytime, anywhere.",
+      "link": "https://panopto.com"
+    },
+    {
+      "title": "Splashtop",
+      "image": "splashtop_image_url",
+      "description": "Splashtop provides remote access and support solutions.",
+      "largeDescription": "Splashtop is a leading provider of remote access and support solutions, offering students and faculty secure and efficient access to their devices from anywhere. With features like screen sharing, file transfer, and remote desktop control, Splashtop enhances collaboration and support in academic settings. The platform ensures seamless connectivity, contributing to a flexible and dynamic learning environment.",
+      "link": "https://splashtop.com"
+    },
+    {
+      "title": "TimelyMD",
+      "image": "timelymd_image_url",
+      "description": "TimelyMD offers telehealth services for students.",
+      "largeDescription": "TimelyMD is a pioneering telehealth platform designed to meet the unique healthcare needs of students. From virtual medical consultations to mental health support, TimelyMD offers convenient and accessible healthcare services. By leveraging technology, TimelyMD contributes to the overall well-being of students, ensuring they have timely access to healthcare resources and support.",
+      "link": "https://timelymd.com"
+    },
+    {
+      "title": "Vision Resource Center",
+      "image": "visionresource_image_url",
+      "description": "Vision Resource Center provides educational resources and training.",
+      "largeDescription": "Vision Resource Center is a comprehensive platform that provides educators and students with access to a rich array of educational resources and training. From professional development courses to instructional materials, the platform aims to empower educators to excel in their roles. By fostering a culture of continuous learning, Vision Resource Center contributes to the enhancement of teaching and learning experiences.",
+      "link": "https://visionresource.com"
+    },
+    {
+      "title": "WEPA",
+      "image": "wepa_image_url",
+      "description": "WEPA is a cloud-based printing solution for students.",
+      "largeDescription": "WEPA transforms the traditional printing experience for students by offering a cloud-based printing solution. With features like mobile printing, document release stations, and secure printing options, WEPA enhances the convenience and accessibility of printing services on campus. The platform aims to streamline the printing process while promoting sustainability through efficient use of resources.",
+      "link": "https://wepa.com"
+    },
+    {
+      "title": "Zoom",
+      "image": "zoom_image_url",
+      "description": "Zoom is a video conferencing and collaboration platform.",
+      "largeDescription": "Zoom is a leading video conferencing and collaboration platform that has become an integral part of modern education. From virtual classrooms to remote meetings, Zoom offers a seamless and user-friendly solution for connecting people across distances. With features like screen sharing, breakout rooms, and interactive whiteboards, Zoom facilitates engaging and interactive online collaboration.",
+      "link": "https://zoom.com"
+    }
+  ]
+  

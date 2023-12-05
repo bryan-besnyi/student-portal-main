@@ -34,7 +34,7 @@ const portalItems = [
 export default function Home() {
   return (
     <>
-      <header className="flex p-4 items-center">
+      {/* <header className="flex p-4 items-center">
         <Image
           src="/smccd-horizontal-blue.svg"
           alt="SMCCCD Logo"
@@ -46,7 +46,7 @@ export default function Home() {
         <Button variant="default" className="ml-auto">
           Need Help?
         </Button>
-      </header>
+      </header> */}
       <section className="bg-gradient-to-r from-violet-600 to-indigo-600  flex justify-center items-center h-32">
         <h1 className="text-7xl text-white">Canvas</h1>
       </section>
@@ -55,7 +55,7 @@ export default function Home() {
           <div className="rotate-12 grid grid-cols-1 sm:grid-cols-5 md:grid-cols-10 lg:grid-cols-15 gap-1 animate-spin"></div>
         </div>
         <main className="py-16">
-          <div className="prose mx-auto">
+          <div className="prose lg:prose-xl mx-auto">
             <h1>Canvas Learning Management System</h1>
             <p>
               The Canvas Learning Management System (LMS) is a robust, flexible,

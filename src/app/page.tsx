@@ -9,40 +9,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Slider } from "@/components/ui/slider";
 import Link from "next/link";
 import { ExternalLink, Info, KeyRound } from "lucide-react";
-
-const portalApplicationItems = [
-  {
-    title: "Canvas",
-    content: "Dive into course materials, submit tasks, and track grades.",
-    imgUrl: "/canvas.webp",
-    imgHeight: 321,
-    imgWidth: 1095,
-    moreInformationPage: "/canvas",
-    signInUrl: "https://my.smccd.edu/canvas/",
-    canSignIn: true,
-    relatedSoftware: [1, 2, 3],
-  },
-  {
-    title: "WebSmart",
-    content: "Manage your student account, enroll in classes, and view aid.",
-    imgUrl: "/websmart.png",
-    imgHeight: 200,
-    imgWidth: 528,
-    moreInformationPage: "/websmart",
-    signInUrl: "https://websmart.smccd.edu/",
-    canSignIn: true,
-  },
-  {
-    title: "WebSchedule",
-    content: "Explore the class schedule, find your next course, and more.",
-    imgUrl: "/webschedule.png",
-    imgHeight: 100,
-    imgWidth: 264,
-    moreInformationPage: "/webschedule",
-    signInUrl: "https://webschedule.smccd.edu/",
-    canSignIn: false,
-  },
-];
+import data from "../app/data.json";
 
 export default function Home() {
   return (
@@ -81,21 +48,24 @@ export default function Home() {
               </TabsTrigger>
             </TabsList>
           </div>
+
           <TabsContent value="applications">
             <section className="container grid grid-cols-1 gap-5 md:grid-cols-3">
-              {portalApplicationItems.map((item) => (
+              {data.map((item) => (
                 <a title={item.title} key={item.title} href={item.signInUrl}>
                   <div className="group block cursor-pointer">
                     <Card>
                       <CardHeader className="flex flex-col flex-grow">
-                        <div className="flex justify-end">
-                          <Badge className="max-w-md bg-green-600">
-                            Popular
-                          </Badge>
+                        <div className="flex justify-end h-6">
+                          {item.isPopular && (
+                            <Badge className="max-w-md bg-green-600">
+                              Popular
+                            </Badge>
+                          )}
                         </div>
-                        <div className="flex justify-center items-center h-36 group-hover:bg-slate-50 rounded ">
+                        <div className="flex justify-center items-center h-40 w-full group-hover:bg-slate-50 rounded overflow-hidden">
                           <Image
-                            className="object-cover w-full p-5 pb-8 group-hover:scale-105 transition-transform"
+                            className="object-contain p-5 pb-8 group-hover:scale-105 transition-transform"
                             src={item.imgUrl}
                             alt=""
                             height={item.imgHeight}
@@ -107,32 +77,29 @@ export default function Home() {
                         </CardTitle>
                       </CardHeader>
                       <CardContent className="grid gap-5 text-gray-900 font-medium">
-                        {item.content}
+                        <p className="h-20 overflow-hidden line-clamp-2 text-lg">
+                          {item.content}
+                        </p>
                         <div className="flex gap-3 justify-end">
                           {item.moreInformationPage && (
                             <a
-                              className="flex justify-center flex-grow rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                              className="flex justify-center flex-grow rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 flex-none"
                               href={item.moreInformationPage}
                             >
-                              <span className="sr-only lg:not-sr-only">
-                                Information
-                              </span>
+                              <span className="sr-only">Information about</span>
                               <Info size={20} className="ml-1 inline" />
                             </a>
                           )}
                           <a
-                            className="rounded-md bg-indigo-50 px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-100"
+                            className="rounded-md bg-indigo-50 px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-100 flex-1"
                             href={item.signInUrl}
                           >
-                            {(item.canSignIn === true
-                              ? "Sign In to"
-                              : "Access") +
-                              " " +
-                              item.title}
+                            {(item.canSignIn === true ? "Sign In" : "Access") +
+                              ` to ${item.title}`}
                             {item.canSignIn === true ? (
-                              <KeyRound size={20} className="ml-1 inline" />
+                              <KeyRound size={18} className="ml-1 inline" />
                             ) : (
-                              <ExternalLink size={20} className="ml-1 inline" />
+                              <ExternalLink size={18} className="ml-1 inline" />
                             )}
                           </a>
                         </div>
@@ -145,7 +112,6 @@ export default function Home() {
           </TabsContent>
           <TabsContent value="tutorials">
             <section className="container grid grid-cols-3 gap-5">
-              
               <Card>
                 <CardHeader>
                   <div className="relative group block cursor-pointer w-100 overflow-hidden rounded-xl ">

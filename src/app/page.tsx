@@ -14,26 +14,14 @@ import data from "../app/data.json";
 export default function Home() {
   return (
     <>
-      <header className="flex p-4 items-center">
-        <Image
-          src="/smccd-horizontal-blue.svg"
-          alt="SMCCCD Logo"
-          width={300}
-          height={100}
-          className="mr-10"
-        />
-        <Navbar />
-        <Button variant="default" className="ml-auto">
-          Need Help?
-        </Button>
-      </header>
-      <section className="h-64 bg-gradient-to-bl from-slate-600 to-indigo-600 flex justify-center items-center">
-        <h1 className="text-6xl font-serif text-white text-center">
-          SMCCCD <br />
-          Student Portal
-        </h1>
-      </section>
-      <main className="bg-gray-100 flex min-h-screen flex-col p-24">
+      <Navbar />
+      <main className="bg-gray-100 min-h-screen pt-24 items-center">
+        <section className="h-64 bg-gradient-to-bl from-slate-600 to-indigo-600 flex justify-center items-center">
+          <h1 className="text-6xl font-serif text-white text-center">
+            SMCCCD <br />
+            Student Portal
+          </h1>
+        </section>
         <Tabs defaultValue="applications">
           <div className="flex justify-center mb-10">
             <TabsList>
@@ -65,7 +53,7 @@ export default function Home() {
                         </div>
                         <div className="flex justify-center items-center h-40 w-full group-hover:bg-slate-50 rounded overflow-hidden">
                           <Image
-                            className="object-contain p-5 pb-8 group-hover:scale-105 transition-transform"
+                            className="object-contain p-5 pb-8 min-h-40 group-hover:scale-105 transition-transform"
                             src={item.imgUrl}
                             alt=""
                             height={item.imgHeight}
@@ -94,8 +82,7 @@ export default function Home() {
                             className="rounded-md bg-indigo-50 px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-100 flex-1"
                             href={item.signInUrl}
                           >
-                            {(item.canSignIn === true ? "Sign In" : "Access") +
-                              ` to ${item.title}`}
+                            {item.canSignIn === true ? "Sign In" : "Access"}
                             {item.canSignIn === true ? (
                               <KeyRound size={18} className="ml-1 inline" />
                             ) : (
@@ -110,6 +97,7 @@ export default function Home() {
               ))}
             </section>
           </TabsContent>
+
           <TabsContent value="tutorials">
             <section className="container grid grid-cols-3 gap-5">
               <Card>
@@ -227,6 +215,7 @@ export default function Home() {
           </TabsContent>
         </Tabs>
       </main>
+      <footer className="bg-black"> test </footer>
     </>
   );
 }

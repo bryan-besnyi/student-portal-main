@@ -10,7 +10,7 @@
     "relatedSoftware": [1,2,3],
     "signInUrl": "https://canvas.com",
     "moreInformationPage":"/websmart",
-    "isPopular":false
+    "isPopular":true
   },
   {
     "title": "DegreeWorks",
@@ -75,47 +75,75 @@
     "relatedSoftware": [1,2,3],
     "signInUrl": "https://successlink.com",
     "moreInformationPage":"/websmart",
-    "isPopular":false
-  },
-  {
-    "title": "Virtual Campus",
-    "imgHeight": 100,
-    "imgWidth": 300,
-    "imgUrl": "/virtualcampus.png",
-    "content": "Virtual Campus provides online learning resources.",
-    "largeDescription": "Virtual Campus is a dynamic online learning environment that extends educational resources beyond the physical campus. It hosts a diverse range of multimedia content, interactive simulations, and virtual labs to enhance the learning experience. Virtual Campus fosters a sense of community through virtual events and collaborative projects, creating an engaging and inclusive learning environment for students in the digital era.",
-    "canSignIn": true,
-    "relatedSoftware": [1,2,3],
-    "signInUrl": "https://virtualcampus.com",
-    "moreInformationPage":"/websmart",
     "isPopular":true
   },
-  {
-    "title": "Accudemia",
-    "imgHeight": 100,
-    "imgWidth": 800,
-    "imgUrl": "/accudemia.png",
-    "content": "Accudemia is a platform for academic support and tutoring.",
-    "largeDescription": "Accudemia is a comprehensive platform dedicated to academic support and tutoring services. It connects students with qualified tutors, provides scheduling tools for appointments, and tracks academic progress. Through personalized support plans and collaborative learning opportunities, Accudemia contributes to the academic success of students by offering tailored assistance in challenging subjects.",
-    "canSignIn": true,
-    "relatedSoftware": [1,2,3],
-    "signInUrl": "https://accudemia.com",
-    "moreInformationPage":"/websmart",
-    "isPopular":true
-  },
-  {
-    "title": "My Majors",
-    "imgHeight": 100,
-    "imgWidth": 500,
-    "imgUrl": "/csmMM.png",
-    "content": "My Majors helps students explore and choose academic majors.",
-    "largeDescription": "My Majors is a valuable resource for students navigating the complexities of choosing an academic major. Through comprehensive assessments, career exploration tools, and personalized guidance, My Majors assists students in making informed decisions about their educational and professional paths. The platform aims to empower students to align their passions and skills with meaningful and fulfilling academic pursuits.",
-    "canSignIn": true,
-    "relatedSoftware": [1,2,3],
-    "signInUrl": "https://mymajors.com",
-    "moreInformationPage":"/websmart",
-    "isPopular":true
-  },
+
+{
+  "title": "My Majors",
+  "imgHeight": 100,
+  "imgWidth": 500,
+  "imgUrl": "/csmMM.png",
+  "content": "My Majors helps students explore and choose academic majors.",
+  "largeDescription": "My Majors is a valuable resource for students navigating the complexities of choosing an academic major. Through comprehensive assessments, career exploration tools, and personalized guidance, My Majors assists students in making informed decisions about their educational and professional paths. The platform aims to empower students to align their passions and skills with meaningful and fulfilling academic pursuits.",
+  "canSignIn": true,
+  "relatedSoftware": [1,2,3],
+  "signInUrl": "https://mymajors.com",
+  "moreInformationPage":"/websmart",
+  "isPopular":true
+},
+{
+  "title": "Office 365",
+  "imgHeight": 100,
+  "imgWidth": 800,
+  "imgUrl": "/office365.png",
+  "content": "Office 365 provides productivity tools and services.",
+  "largeDescription": "Office 365 is a comprehensive suite of productivity tools that empowers students and educators with collaborative solutions. From document creation and sharing to communication and project management, Office 365 enhances the efficiency of academic and administrative tasks. With cloud-based accessibility, students can seamlessly collaborate on projects, fostering a digital ecosystem that supports learning and collaboration.",
+  "canSignIn": true,
+  "relatedSoftware": [1,2,3],
+  "signInUrl": "https://office365.com",
+  "moreInformationPage":"/websmart",
+  "isPopular":true
+},
+{
+  "title": "Zoom",
+  "imgHeight": 100,
+  "imgWidth": 300,
+  "imgUrl": "/zoom.png",
+  "content": "Zoom is a video conferencing and collaboration platform.",
+  "largeDescription": "Zoom is a leading video conferencing and collaboration platform that has become an integral part of modern education. From virtual classrooms to remote meetings, Zoom offers a seamless and user-friendly solution for connecting people across distances. With features like screen sharing, breakout rooms, and interactive whiteboards, Zoom facilitates engaging and interactive online collaboration.",
+  "canSignIn": true,
+  "relatedSoftware": [1,2,3],
+  "signInUrl": "https://zoom.com",
+  "moreInformationPage":"/websmart",
+  "isPopular":true
+},
+{
+  "title": "Virtual Campus",
+  "imgHeight": 100,
+  "imgWidth": 300,
+  "imgUrl": "/virtualcampus.png",
+  "content": "Virtual Campus provides online learning resources.",
+  "largeDescription": "Virtual Campus is a dynamic online learning environment that extends educational resources beyond the physical campus. It hosts a diverse range of multimedia content, interactive simulations, and virtual labs to enhance the learning experience. Virtual Campus fosters a sense of community through virtual events and collaborative projects, creating an engaging and inclusive learning environment for students in the digital era.",
+  "canSignIn": true,
+  "relatedSoftware": [1,2,3],
+  "signInUrl": "https://virtualcampus.com",
+  "moreInformationPage":"/websmart",
+  "isPopular":false
+},
+{
+  "title": "Accudemia",
+  "imgHeight": 100,
+  "imgWidth": 800,
+  "imgUrl": "/accudemia.png",
+  "content": "Accudemia is a platform for academic support and tutoring.",
+  "largeDescription": "Accudemia is a comprehensive platform dedicated to academic support and tutoring services. It connects students with qualified tutors, provides scheduling tools for appointments, and tracks academic progress. Through personalized support plans and collaborative learning opportunities, Accudemia contributes to the academic success of students by offering tailored assistance in challenging subjects.",
+  "canSignIn": true,
+  "relatedSoftware": [1,2,3],
+  "signInUrl": "https://accudemia.com",
+  "moreInformationPage":"/websmart",
+  "isPopular":false
+},
+
   {
     "title": "Library Pass Comics Plus",
     "imgHeight": 100,
@@ -127,20 +155,7 @@
     "relatedSoftware": [1,2,3],
     "signInUrl": "https://librarypass.com",
     "moreInformationPage":"/websmart",
-    "isPopular":true
-  },
-  {
-    "title": "Office 365",
-    "imgHeight": 100,
-    "imgWidth": 800,
-    "imgUrl": "/office365.png",
-    "content": "Office 365 provides productivity tools and services.",
-    "largeDescription": "Office 365 is a comprehensive suite of productivity tools that empowers students and educators with collaborative solutions. From document creation and sharing to communication and project management, Office 365 enhances the efficiency of academic and administrative tasks. With cloud-based accessibility, students can seamlessly collaborate on projects, fostering a digital ecosystem that supports learning and collaboration.",
-    "canSignIn": true,
-    "relatedSoftware": [1,2,3],
-    "signInUrl": "https://office365.com",
-    "moreInformationPage":"/websmart",
-    "isPopular":true
+    "isPopular":false
   },
   {
     "title": "OneSearch",
@@ -153,7 +168,7 @@
     "relatedSoftware": [1,2,3],
     "signInUrl": "https://onesearch.com",
     "moreInformationPage":"/websmart",
-    "isPopular":true
+    "isPopular":false
   },
   {
     "title": "RaveMobile",
@@ -166,7 +181,7 @@
     "relatedSoftware": [1,2,3],
     "signInUrl": "https://ravemobile.com",
     "moreInformationPage":"",
-    "isPopular":true
+    "isPopular":false
   },
   {
     "title": "Panopto",
@@ -205,7 +220,7 @@
     "relatedSoftware": [1,2,3],
     "signInUrl": "https://timelymd.com",
     "moreInformationPage":"/websmart",
-    "isPopular":true
+    "isPopular":false
   },
   {
     "title": "Vision Resource Center",
@@ -218,7 +233,7 @@
     "relatedSoftware": [1,2,3],
     "signInUrl": "https://visionresource.com",
     "moreInformationPage":"/websmart",
-    "isPopular":true
+    "isPopular":false
   },
   {
     "title": "WEPA",
@@ -231,19 +246,6 @@
     "relatedSoftware": [1,2,3],
     "signInUrl": "https://wepa.com",
     "moreInformationPage":"/websmart",
-    "isPopular":true
-  },
-  {
-    "title": "Zoom",
-    "imgHeight": 100,
-    "imgWidth": 300,
-    "imgUrl": "/zoom.png",
-    "content": "Zoom is a video conferencing and collaboration platform.",
-    "largeDescription": "Zoom is a leading video conferencing and collaboration platform that has become an integral part of modern education. From virtual classrooms to remote meetings, Zoom offers a seamless and user-friendly solution for connecting people across distances. With features like screen sharing, breakout rooms, and interactive whiteboards, Zoom facilitates engaging and interactive online collaboration.",
-    "canSignIn": true,
-    "relatedSoftware": [1,2,3],
-    "signInUrl": "https://zoom.com",
-    "moreInformationPage":"/websmart",
-    "isPopular":true
+    "isPopular":false
   }
 ]

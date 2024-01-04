@@ -82,7 +82,7 @@ export function Navbar () {
           <NavigationMenuList className="lg:flex md:space-x-8 hidden">
           <NavigationMenuItem>
         <NavigationMenuTrigger>
-          Getting started at SMCCCD
+          Get started at SMCCCD
         </NavigationMenuTrigger>
         <NavigationMenuContent>
           <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
@@ -152,14 +152,14 @@ export function Navbar () {
         {showMenu && (
            <NavigationMenu>
            <NavigationMenuList>
-          <div className="menu lg:hidden mt-10" id="navbar">
-            <ul className=" flex flex-row py-4 items-center ">
+          <div className="menu lg:hidden mt-10 pt-2" id="navbar">
+            <ul className=" flex flex-row items-center ">
             <NavigationMenuItem>
         <NavigationMenuTrigger className="text-xs">
-          Getting started at SMCCCD
+        Get started at SMCCCD
         </NavigationMenuTrigger>
         <NavigationMenuContent>
-          <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+          <ul className="grid gap-6 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
             <li className="row-span-3">
               <NavigationMenuLink asChild>
                 <a
@@ -216,8 +216,8 @@ export function Navbar () {
 
               <NavigationMenuItem>
                 <Link href="" passHref>
-                  <NavigationMenuLink className="block py-2 pl-3 pr-4 text-[#ffffff] sm:text-xl rounded md:p-0 hover:text-red-700">
-                        <Button variant="default" className="ml-auto">
+                  <NavigationMenuLink className=" text-[#ffffff] sm:text-xl rounded md:p-0 hover:text-red-700">
+                        <Button variant="default" className="text-xs ">
                         Need Help?
                       </Button>
                   </NavigationMenuLink>

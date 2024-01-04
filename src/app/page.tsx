@@ -79,7 +79,7 @@ export default function Home() {
                             </a>
                           )}
                           <a
-                            className="rounded-md bg-indigo-50 px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-100 flex-1"
+                            className="rounded-md bg-indigo-50 px-3.5 py-2.5 text-sm text-center font-semibold text-indigo-600 shadow-sm hover:bg-indigo-100 flex-1"
                             href={item.signInUrl}
                           >
                             {item.canSignIn === true ? "Sign In" : "Access"}

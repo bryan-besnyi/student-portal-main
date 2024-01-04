@@ -71,15 +71,15 @@ export default function Home() {
                         <div className="flex gap-3 justify-end">
                           {item.moreInformationPage && (
                             <a
-                              className="flex justify-center flex-grow rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 flex-none"
+                              className="flex justify-center flex-grow rounded-md py-6 bg-white text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 flex-none"
                               href={item.moreInformationPage}
                             >
-                              <span className="">Info</span>
-                              <Info size={20} className="ml-1 inline" />
+                              <span className="text-sm ">Information</span>
+                              <Info size={20} className="ml-2" />
                             </a>
                           )}
                           <a
-                            className="rounded-md bg-indigo-50 px-3.5 py-2.5 text-sm text-center font-semibold text-indigo-600 shadow-sm hover:bg-indigo-100 flex-1"
+                            className="rounded-md py-6 bg-indigo-50 text-sm px-2 text-center font-semibold text-indigo-600 shadow-sm hover:bg-indigo-100 flex-1"
                             href={item.signInUrl}
                           >
                             {item.canSignIn === true ? "Sign In" : "Access"}

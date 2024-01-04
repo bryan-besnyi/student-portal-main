@@ -74,7 +74,7 @@ export default function Home() {
                               className="flex justify-center flex-grow rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 flex-none"
                               href={item.moreInformationPage}
                             >
-                              <span className="sr-only">Information about</span>
+                              <span className="">Info</span>
                               <Info size={20} className="ml-1 inline" />
                             </a>
                           )}

@@ -207,9 +207,61 @@ export default function Home() {
                   <CardHeader className="text-2xl">
                     College of San Mateo
                   </CardHeader>
+                  <CardContent className="group text-lg grid grid-cols-1 gap-4">
+                    <span className="block">
+                      <span className="opacity-50 group-hover:animate-ping">
+                        📞
+                      </span>
+                      <a className="ml-4" href="tel:650-492-0018">
+                        Call
+                      </a>
+                    </span>
+                    <span className="block">
+                      📧
+                      <a className="ml-4" href="mailto:besnyib@smccd.edu">
+                        E-mail
+                      </a>
+                    </span>
+                    <span className="block">
+                      <address className="not-italic flex">
+                        <span className="opacity-50">📍</span>
+                        <a className="ml-4" href="#">
+                          Building 9, 1st Floor <br />
+                          4200 Farm Hill Blvd., <br />
+                          Redwood City, CA 94061
+                        </a>
+                      </address>
+                    </span>
+                  </CardContent>
                 </Card>
                 <Card>
                   <CardHeader className="text-2xl">Skyline College</CardHeader>
+                  <CardContent className="group text-lg grid grid-cols-1 gap-4">
+                    <span className="block">
+                      <span className="opacity-50 group-hover:animate-ping">
+                        📞
+                      </span>
+                      <a className="ml-4" href="tel:650-492-0018">
+                        Call
+                      </a>
+                    </span>
+                    <span className="block">
+                      📧
+                      <a className="ml-4" href="mailto:besnyib@smccd.edu">
+                        E-mail
+                      </a>
+                    </span>
+                    <span className="block">
+                      <address className="not-italic flex">
+                        <span className="opacity-50">📍</span>
+                        <a className="ml-4" href="#">
+                          Building 9, 1st Floor <br />
+                          4200 Farm Hill Blvd., <br />
+                          Redwood City, CA 94061
+                        </a>
+                      </address>
+                    </span>
+                  </CardContent>
                 </Card>
               </div>
             </section>

@@ -17,7 +17,7 @@ export default function Home() {
       <Navbar />
       <main className="bg-gray-100 min-h-screen items-center md:pt-24">
         <section className="h-64 bg-gradient-to-bl from-slate-600 to-indigo-600 flex justify-center items-center">
-          <h1 className="text-4xl font-serif text-white text-center md:text-6xl">
+          <h1 className="text-4xl font-serif pt-5 text-white text-center md:text-6xl">
             SMCCCD <br />
             Student Portal
           </h1>

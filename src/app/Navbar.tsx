@@ -1,10 +1,10 @@
 "use client";
-
 import * as React from "react";
 import Link from "next/link";
-
+import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Icons } from "@/components/icons";
+import { RxHamburgerMenu } from "react-icons/rx";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -50,83 +50,94 @@ const components: { title: string; href: string; description: string }[] = [
   },
 ];
 
+//------
+// const Navbar = () => {
+//   const [showMenu, setShowMenu] = useState(false);
+
+//   const toggleMenu = () => {
+//     setShowMenu(!showMenu);
+//   };
+//-----
+
 export function Navbar() {
   return (
-    <>
-      <header className="flex items-center justify-between">
-        <Image
-          src="/smccd-horizontal-blue.svg"
-          alt="SMCCCD Logo"
-          width={300}
-          height={100}
-          className="mr-10"
-        />
-        <NavigationMenu>
-          <NavigationMenuList>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger>
-                Getting started at SMCCCD
-              </NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                  <li className="row-span-3">
-                    <NavigationMenuLink asChild>
-                      <a
-                        className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                        href="/"
-                      >
-                        <Icons.logo className="h-6 w-6" />
-                        <div className="mb-2 mt-4 text-lg font-medium">
-                          NavItem 1
-                        </div>
-                        <p className="text-sm leading-tight text-muted-foreground">
-                          Some brief description of this item.
-                        </p>
-                      </a>
-                    </NavigationMenuLink>
-                  </li>
-                  <ListItem href="/docs" title="Item 2">
-                    Item 2 description
-                  </ListItem>
-                  <ListItem href="/docs/installation" title="Item 3">
-                    Item 3 description
-                  </ListItem>
-                  <ListItem href="/docs/primitives/typography" title="Item 4">
-                    Item 4 description
-                  </ListItem>
-                </ul>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger>Tutorials</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                  {components.map((component) => (
-                    <ListItem
-                      key={component.title}
-                      title={component.title}
-                      href={component.href}
-                    >
-                      {component.description}
-                    </ListItem>
-                  ))}
-                </ul>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href="/docs" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Support
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
-        <Button variant="default" className="ml-auto">
-          Need Help?
-        </Button>
-      </header>
-    </>
+    
+ <>
+    
+ <header className="flex flex-col md:flex-row items-center justify-between max-w-full z-10">
+   <Image
+     src="/smccd-horizontal-blue.svg"
+     alt="SMCCCD Logo"
+     width={100}
+     height={100}
+     className="mr-10"
+   />
+   <NavigationMenu>
+     <NavigationMenuList>
+       <NavigationMenuItem>
+         <NavigationMenuTrigger>
+           Getting started at SMCCCD
+         </NavigationMenuTrigger>
+         <NavigationMenuContent>
+           <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+             <li className="row-span-3">
+               <NavigationMenuLink asChild>
+                 <a
+                   className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                   href="/"
+                 >
+                   <Icons.logo className="h-6 w-6" />
+                   <div className="mb-2 mt-4 text-lg font-medium">
+                     NavItem 1
+                   </div>
+                   <p className="text-sm leading-tight text-muted-foreground">
+                     Some brief description of this item.
+                   </p>
+                 </a>
+               </NavigationMenuLink>
+             </li>
+             <ListItem href="/docs" title="Item 2">
+               Item 2 description
+             </ListItem>
+             <ListItem href="/docs/installation" title="Item 3">
+               Item 3 description
+             </ListItem>
+             <ListItem href="/docs/primitives/typography" title="Item 4">
+               Item 4 description
+             </ListItem>
+           </ul>
+         </NavigationMenuContent>
+       </NavigationMenuItem>
+       <NavigationMenuItem>
+         <NavigationMenuTrigger>Tutorials</NavigationMenuTrigger>
+         <NavigationMenuContent>
+           <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+             {components.map((component) => (
+               <ListItem
+                 key={component.title}
+                 title={component.title}
+                 href={component.href}
+               >
+                 {component.description}
+               </ListItem>
+             ))}
+           </ul>
+         </NavigationMenuContent>
+       </NavigationMenuItem>
+       <NavigationMenuItem>
+         <Link href="/docs" legacyBehavior passHref>
+           <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+             Support
+           </NavigationMenuLink>
+         </Link>
+       </NavigationMenuItem>
+     </NavigationMenuList>
+   </NavigationMenu>
+   <Button variant="default" className="ml-auto">
+     Need Help?
+   </Button>
+ </header> 
+</>
   );
 }
 
@@ -154,4 +165,5 @@ const ListItem = React.forwardRef<
     </li>
   );
 });
+
 ListItem.displayName = "ListItem";

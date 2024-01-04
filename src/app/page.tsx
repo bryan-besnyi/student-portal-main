@@ -15,30 +15,30 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="bg-gray-100 min-h-screen pt-24 items-center">
+      <main className="bg-gray-100 min-h-screen items-center md:pt-24">
         <section className="h-64 bg-gradient-to-bl from-slate-600 to-indigo-600 flex justify-center items-center">
-          <h1 className="text-6xl font-serif text-white text-center">
+          <h1 className="text-4xl font-serif text-white text-center md:text-6xl">
             SMCCCD <br />
             Student Portal
           </h1>
         </section>
         <Tabs defaultValue="applications">
-          <div className="flex justify-center mb-10">
+          <div className="flex justify-center mb-10 md:pt-5">
             <TabsList>
-              <TabsTrigger className="text-2xl" value="applications">
+              <TabsTrigger className="text-xl md:text-2xl" value="applications">
                 Applications
               </TabsTrigger>
-              <TabsTrigger className="text-2xl" value="tutorials">
+              <TabsTrigger className="text-xl md:text-2xl" value="tutorials">
                 Tutorials
               </TabsTrigger>
-              <TabsTrigger className="text-2xl" value="support">
+              <TabsTrigger className="text-xl md:text-2xl" value="support">
                 Support
               </TabsTrigger>
             </TabsList>
           </div>
 
           <TabsContent value="applications">
-            <section className="container grid grid-cols-1 gap-5 md:grid-cols-3">
+            <section className="container grid grid-cols-1 gap-5 pb-10 md:grid-cols-3">
               {data.map((item) => (
                 <a title={item.title} key={item.title} href={item.signInUrl}>
                   <div className="group block cursor-pointer">
@@ -99,7 +99,7 @@ export default function Home() {
           </TabsContent>
 
           <TabsContent value="tutorials">
-            <section className="container grid grid-cols-3 gap-5">
+            <section className="container grid grid-cols-1 gap-5 md:grid-cols-3 pb-10">
               <Card>
                 <CardHeader>
                   <div className="relative group block cursor-pointer w-100 overflow-hidden rounded-xl ">
@@ -164,15 +164,16 @@ export default function Home() {
               </Card>
             </section>
           </TabsContent>
+          
           <TabsContent value="support">
-            <section className="container animate-in prose-blue lg:prose-xl">
-              <h2>Student Support Resources</h2>
-              <h3>Admissions & Records</h3>
+            <section className="container animate-in prose-blue pb-10 lg:prose-xl">
+              <h2 className="text-2xl text- pb-3">Student Support Resources</h2>
+              <h3 className="text-xl text- pb-3">Admissions & Records</h3>
               <p>
                 For questions related to enrolling at one of our campuses,
                 course enrollment, dropping courses, transcripts and more!
               </p>
-              <div className="grid grid-cols-3 gap-5">
+              <div className="container grid grid-cols-1 gap-5 md:grid-cols-3 pt-10">
                 <Card>
                   <CardHeader className="text-2xl ">Canada College</CardHeader>
                   <CardContent className="group text-lg grid grid-cols-1 gap-4">
@@ -215,7 +216,7 @@ export default function Home() {
           </TabsContent>
         </Tabs>
       </main>
-      <footer className="bg-black"> test </footer>
+      
     </>
   );
 }

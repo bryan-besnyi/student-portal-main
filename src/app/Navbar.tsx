@@ -67,9 +67,9 @@ export function Navbar () {
           alt="SMCCCD Logo"
           width={100}
           height={100}
-          className="m-5 md:w-60 "
+          className="m-5 lg:w-60 "
         />
-  <div className="mobile-menu block absolute top-0 right-0 lg:hidden ">
+  <div className="mobile-menu z-30 block absolute top-0 right-0 lg:hidden ">
           <button
             onClick={toggleMenu}
             className="flex items-center px-3 py-2 text-slate-200  hover:text-white "

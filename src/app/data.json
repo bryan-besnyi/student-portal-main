@@ -9,7 +9,7 @@
     "canSignIn": true,
     "relatedSoftware": [1,2,3],
     "signInUrl": "https://canvas.com",
-    "moreInformationPage":"/websmart",
+    "moreInformationPage":"/canvas",
     "isPopular":true
   },
   {
@@ -35,7 +35,7 @@
     "canSignIn": true,
     "relatedSoftware": [1,2,3],
     "signInUrl": "https://gmail.com",
-    "moreInformationPage":"/websmart",
+    "moreInformationPage":"/studentEmail",
     "isPopular":true
   },
   {
@@ -48,7 +48,7 @@
     "canSignIn": true,
     "relatedSoftware": [1,2,3],
     "signInUrl": "https://websmart.com",
-    "moreInformationPage":"/websmart",
+    "moreInformationPage":"/webSmart",
     "isPopular":true
   },
   {
@@ -61,7 +61,7 @@
     "canSignIn": false,
     "relatedSoftware": [1,2,3],
     "signInUrl": "https://webschedule.com",
-    "moreInformationPage":"/websmart",
+    "moreInformationPage":"/webSchedule",
     "isPopular":true
   },
   {
@@ -74,7 +74,7 @@
     "canSignIn": true,
     "relatedSoftware": [1,2,3],
     "signInUrl": "https://successlink.com",
-    "moreInformationPage":"/websmart",
+    "moreInformationPage":"/studentSL",
     "isPopular":true
   },
 
@@ -88,7 +88,7 @@
   "canSignIn": true,
   "relatedSoftware": [1,2,3],
   "signInUrl": "https://mymajors.com",
-  "moreInformationPage":"/websmart",
+  "moreInformationPage":"/myMajors",
   "isPopular":true
 },
 {
@@ -101,7 +101,7 @@
   "canSignIn": true,
   "relatedSoftware": [1,2,3],
   "signInUrl": "https://office365.com",
-  "moreInformationPage":"/websmart",
+  "moreInformationPage":"/office365",
   "isPopular":true
 },
 {
@@ -114,7 +114,7 @@
   "canSignIn": true,
   "relatedSoftware": [1,2,3],
   "signInUrl": "https://zoom.com",
-  "moreInformationPage":"/websmart",
+  "moreInformationPage":"/zoom",
   "isPopular":true
 },
 {
@@ -127,7 +127,7 @@
   "canSignIn": true,
   "relatedSoftware": [1,2,3],
   "signInUrl": "https://virtualcampus.com",
-  "moreInformationPage":"/websmart",
+  "moreInformationPage":"/virtualCampus",
   "isPopular":false
 },
 {
@@ -140,7 +140,7 @@
   "canSignIn": true,
   "relatedSoftware": [1,2,3],
   "signInUrl": "https://accudemia.com",
-  "moreInformationPage":"/websmart",
+  "moreInformationPage":"/accudemia",
   "isPopular":false
 },
 
@@ -154,7 +154,7 @@
     "canSignIn": true,
     "relatedSoftware": [1,2,3],
     "signInUrl": "https://librarypass.com",
-    "moreInformationPage":"/websmart",
+    "moreInformationPage":"/libraryPass",
     "isPopular":false
   },
   {
@@ -167,7 +167,7 @@
     "canSignIn": false,
     "relatedSoftware": [1,2,3],
     "signInUrl": "https://onesearch.com",
-    "moreInformationPage":"/websmart",
+    "moreInformationPage":"/oneSearch",
     "isPopular":false
   },
   {
@@ -219,7 +219,7 @@
     "canSignIn": true,
     "relatedSoftware": [1,2,3],
     "signInUrl": "https://timelymd.com",
-    "moreInformationPage":"/websmart",
+    "moreInformationPage":"/timelyMD",
     "isPopular":false
   },
   {
@@ -232,7 +232,7 @@
     "canSignIn": true,
     "relatedSoftware": [1,2,3],
     "signInUrl": "https://visionresource.com",
-    "moreInformationPage":"/websmart",
+    "moreInformationPage":"/VRC",
     "isPopular":false
   },
   {
@@ -245,7 +245,7 @@
     "canSignIn": true,
     "relatedSoftware": [1,2,3],
     "signInUrl": "https://wepa.com",
-    "moreInformationPage":"/websmart",
+    "moreInformationPage":"/wepa",
     "isPopular":false
   }
 ]

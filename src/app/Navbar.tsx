@@ -60,14 +60,14 @@ export function Navbar () {
 
   return (
  <>
-<nav className="fixed mx-auto top-0 left-0 right-0 z-10 bg-[#ffffff] bg-opacity-100">
+<nav className="fixed mx-auto top-0 left-0 right-0 z-10 bg-[#002F65] bg-opacity-100">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2 relative">
         <Image
-          src="/smccd-horizontal-blue.svg"
+        src="/smccdlogo.png"
           alt="SMCCCD Logo"
           width={100}
           height={100}
-          className="m-5 lg:w-60 "
+          className="m-5 rounded-xl lg:w-60"
         />
   <div className="mobile-menu z-30 block absolute top-0 right-0 lg:hidden ">
           <button
@@ -137,6 +137,27 @@ export function Navbar () {
           </NavigationMenuLink>
         </Link>
       </NavigationMenuItem>
+      {/* <NavigationMenuItem>
+        <Link href="/docs" legacyBehavior passHref>
+          <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            WebSmart
+          </NavigationMenuLink>
+        </Link>
+      </NavigationMenuItem>
+      <NavigationMenuItem>
+        <Link href="/docs" legacyBehavior passHref>
+          <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            WebSchedual
+          </NavigationMenuLink>
+        </Link>
+      </NavigationMenuItem>
+      <NavigationMenuItem>
+        <Link href="/docs" legacyBehavior passHref>
+          <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            Canvas
+          </NavigationMenuLink>
+        </Link>
+      </NavigationMenuItem> */}
       <NavigationMenuItem>
                 <Link href="" passHref>
                   <NavigationMenuLink className="block py-2 pl-3 pr-4 text-[#ffffff] sm:text-xl rounded md:p-0 hover:text-red-700">
@@ -209,7 +230,7 @@ export function Navbar () {
               <NavigationMenuItem>
         <Link href="/docs" legacyBehavior passHref>
           <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-            Support
+            Su
           </NavigationMenuLink>
         </Link>
       </NavigationMenuItem>
@@ -229,16 +250,9 @@ export function Navbar () {
   </NavigationMenuList>
 </NavigationMenu>
         )}
-
       </div>
-      
     </nav>
-  
 </>
-
-
-
-
   );
 }
 

@@ -71,7 +71,7 @@ export default function Home() {
                 DegreeWorks provides students with a detailed degree audit, outlining their progress towards graduation and highlighting remaining requirements. Through interactive visualizations and comprehensive reports, students can track their academic progress, identify areas of focus, and stay on track towards degree completion.
               </li>
               <li>
-                <strong>Course Planning and Registration:</strong> DegreeWorks offers tools for course planning and registration, allowing students to explore degree requirements, plan their course schedules, and register for classes. Integration with the institution's course catalog and academic policies ensures accuracy and alignment with program requirements.
+                <strong>Course Planning and Registration:</strong> DegreeWorks offers tools for course planning and registration, allowing students to explore degree requirements, plan their course schedules, and register for classes. Integration with the institution&apos;s course catalog and academic policies ensures accuracy and alignment with program requirements.
               </li>
               <li>
                 <strong>What-If Analysis:</strong>DegreeWorks enables students to perform What-If analysis scenarios, exploring alternative majors, minors, or concentrations and assessing the impact on their academic progress and degree completion timeline. This feature empowers students to make informed decisions about their academic pathways and explore various academic opportunities.
@@ -86,7 +86,7 @@ export default function Home() {
                 <strong>Enhanced Academic Planning:</strong> DegreeWorks streamlines the academic planning process, providing students with a clear roadmap towards degree completion. By visualizing degree requirements, tracking progress, and identifying potential academic pathways, students can make informed decisions about their course selection and academic goals.
               </li>
               <li>
-                <strong>Improved Advising and Support:</strong>DegreeWorks facilitates productive advising sessions by providing advisors with comprehensive insights into students' academic progress and degree requirements. Advisors can collaborate with students to develop personalized academic plans, address academic concerns, and support timely degree completion.
+                <strong>Improved Advising and Support:</strong>DegreeWorks facilitates productive advising sessions by providing advisors with comprehensive insights into students&apos; academic progress and degree requirements. Advisors can collaborate with students to develop personalized academic plans, address academic concerns, and support timely degree completion.
               </li>
               <li>
                 <strong>Efficient Degree Completion:</strong> DegreeWorks helps students optimize their course schedules and academic pathways, leading to efficient degree completion and timely graduation. By identifying transfer credits, evaluating course equivalencies, and prioritizing degree requirements, students can minimize unnecessary coursework and maximize their academic efficiency.

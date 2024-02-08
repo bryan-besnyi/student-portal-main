@@ -71,7 +71,7 @@ export default function Home() {
                 Office 365 includes popular productivity applications such as Microsoft Word, Excel, and PowerPoint, providing students and educators with powerful tools for creating documents, spreadsheets, and presentations. With a wide range of templates, formatting options, and collaboration features, Office applications support a variety of academic tasks and projects.
               </li>
               <li>
-                <strong>OneDrive:</strong> Office 365 integrates seamlessly with OneDrive, Microsoft's cloud storage service, allowing students and educators to store, access, and share files from any device with an internet connection. OneDrive offers robust security features, version history, and collaboration capabilities, enabling efficient document management and collaboration.
+                <strong>OneDrive:</strong> Office 365 integrates seamlessly with OneDrive, Microsoft&apos;s cloud storage service, allowing students and educators to store, access, and share files from any device with an internet connection. OneDrive offers robust security features, version history, and collaboration capabilities, enabling efficient document management and collaboration.
               </li>
               <li>
                 <strong>Microsoft Teams: </strong> Office 365 includes Microsoft Teams, a unified communication and collaboration platform that brings together chat, video conferencing, file sharing, and collaboration tools in one interface. Teams facilitates virtual classrooms, group projects, and teacher-student communication, fostering collaboration and engagement in both remote and in-person learning environments.

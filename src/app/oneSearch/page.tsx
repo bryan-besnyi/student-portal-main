@@ -71,7 +71,7 @@ export default function Home() {
                 OneSearch provides users with a single, intuitive search interface that allows them to explore a wide range of library resources, including books, journals, articles, databases, and multimedia materials. By consolidating access to multiple resources in one platform, OneSearch simplifies the research process and saves users time and effort.
               </li>
               <li>
-                <strong>Comprehensive Content Coverage: </strong> OneSearch offers access to a comprehensive collection of academic resources spanning various disciplines, subjects, and formats. Users can discover scholarly materials from the library's catalog, institutional repositories, online databases, and open access repositories, ensuring access to a wealth of information for their research needs.
+                <strong>Comprehensive Content Coverage: </strong> OneSearch offers access to a comprehensive collection of academic resources spanning various disciplines, subjects, and formats. Users can discover scholarly materials from the library&apos;s catalog, institutional repositories, online databases, and open access repositories, ensuring access to a wealth of information for their research needs.
               </li>
               <li>
                 <strong>Advanced Search and Filtering Options:</strong> OneSearch provides users with advanced search and filtering options to refine their search results and locate relevant resources efficiently. Users can narrow down search results by criteria such as publication date, resource type, subject area, and language, enabling precise and targeted searches.
@@ -86,7 +86,7 @@ export default function Home() {
                 <strong>Streamlined Research Process:</strong> OneSearch streamlines the research process by providing users with a centralized platform for discovering and accessing scholarly materials. With its intuitive search interface and comprehensive content coverage, OneSearch empowers users to find relevant resources quickly and easily, facilitating efficient research workflows.
               </li>
               <li>
-                <strong>Expanded Access to Academic Resources:</strong> OneSearch enhances access to academic resources by providing users with access to a wide range of materials from diverse sources and disciplines. Whether accessing materials from the library's collection, online databases, or open access repositories, users can discover a wealth of scholarly information to support their research and learning needs.
+                <strong>Expanded Access to Academic Resources:</strong> OneSearch enhances access to academic resources by providing users with access to a wide range of materials from diverse sources and disciplines. Whether accessing materials from the library&apos;s collection, online databases, or open access repositories, users can discover a wealth of scholarly information to support their research and learning needs.
               </li>
               <li>
                 <strong>Promotion of Information Literacy:</strong> OneSearch promotes information literacy by empowering users to develop critical thinking skills, evaluate information sources, and engage in scholarly inquiry. Through its user-friendly interface, advanced search capabilities, and access to curated resources, OneSearch supports users in navigating the complex landscape of scholarly communication and information discovery.

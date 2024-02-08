@@ -92,7 +92,7 @@ export default function Home() {
             </ul>
             <h2>Conclusion</h2>
             <p>
-            In an educational landscape characterized by digital communication and collaboration, Student Gmail emerges as a valuable platform for facilitating seamless communication, collaboration, and information sharing among students, faculty, and staff. By providing students with access to a robust email and communication platform integrated with collaborative tools and features, Student Gmail empowers students to communicate effectively, collaborate efficiently, and succeed academically in today's interconnected world. Through continued innovation and support, Student Gmail remains at the forefront of enhancing the student experience and promoting academic success in educational institutions worldwide.
+            In an educational landscape characterized by digital communication and collaboration, Student Gmail emerges as a valuable platform for facilitating seamless communication, collaboration, and information sharing among students, faculty, and staff. By providing students with access to a robust email and communication platform integrated with collaborative tools and features, Student Gmail empowers students to communicate effectively, collaborate efficiently, and succeed academically in today&apos;s interconnected world. Through continued innovation and support, Student Gmail remains at the forefront of enhancing the student experience and promoting academic success in educational institutions worldwide.
             </p>
           </div>
         </main>

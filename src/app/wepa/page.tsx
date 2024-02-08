@@ -76,7 +76,7 @@ export default function Home() {
                 <strong>Flexible Payment Options:</strong> WEPA supports a variety of payment options for printing services, including campus cards, credit/debit cards, and student accounts. Users can easily add funds to their printing accounts, track printing expenses, and manage print quotas through the WEPA portal or mobile app, promoting transparency and accountability in printing usage.
               </li>
               <li>
-                <strong>Environmental Sustainability:</strong> WEPA promotes environmental sustainability by offering features such as double-sided printing, print job release, and cloud storage options, which help reduce paper waste, conserve resources, and minimize the carbon footprint associated with printing activities. By encouraging responsible printing practices, WEPA supports the institution's sustainability initiatives and promotes environmental stewardship among users.
+                <strong>Environmental Sustainability:</strong> WEPA promotes environmental sustainability by offering features such as double-sided printing, print job release, and cloud storage options, which help reduce paper waste, conserve resources, and minimize the carbon footprint associated with printing activities. By encouraging responsible printing practices, WEPA supports the institution&apos;s sustainability initiatives and promotes environmental stewardship among users.
               </li>
             </ul>
             <h2>Benefits of Utilizing Wepa</h2>
@@ -85,7 +85,7 @@ export default function Home() {
             </p>
             <ul>
               <li>
-                <strong>Convenience and Accessibility: </strong> WEPA provides users with convenient access to printing services from any location on campus or off-campus, using their preferred devices. Whether printing documents for classes, assignments, or administrative purposes, users can rely on WEPA's cloud printing solutions to meet their needs efficiently and effectively.
+                <strong>Convenience and Accessibility: </strong> WEPA provides users with convenient access to printing services from any location on campus or off-campus, using their preferred devices. Whether printing documents for classes, assignments, or administrative purposes, users can rely on WEPA&apos;s cloud printing solutions to meet their needs efficiently and effectively.
               </li>
               <li>
                 <strong>Cost Savings and Efficiency:</strong>  WEPA helps educational institutions save costs and improve operational efficiency by reducing the need for traditional printing infrastructure, maintenance, and support. With cloud-based printing, institutions can streamline printing processes, minimize downtime, and reallocate resources to other strategic priorities, leading to cost savings and productivity gains.
@@ -94,7 +94,7 @@ export default function Home() {
                 <strong>Enhanced User Experience:</strong> WEPA enhances the printing experience for users by providing intuitive interfaces, fast printing speeds, and reliable performance. Whether printing documents, posters, or presentations, users can expect high-quality results and seamless printing experiences that meet their expectations for convenience, speed, and reliability.
               </li>
               <li>
-                <strong>Support for Remote and Hybrid Learning:</strong> WEPA's cloud printing solutions support remote and hybrid learning environments by enabling students and faculty to print documents and materials from any location, at any time. Whether attending virtual classes or accessing course materials online, users can easily print study guides, lecture notes, and assignments using WEPA's cloud printing services, ensuring continuity in the learning process.
+                <strong>Support for Remote and Hybrid Learning:</strong> WEPA&apos;s cloud printing solutions support remote and hybrid learning environments by enabling students and faculty to print documents and materials from any location, at any time. Whether attending virtual classes or accessing course materials online, users can easily print study guides, lecture notes, and assignments using WEPA&apos;s cloud printing services, ensuring continuity in the learning process.
               </li>
             </ul>
             <h2>Conclusion</h2>

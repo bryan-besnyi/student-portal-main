@@ -57,7 +57,7 @@ export default function Home() {
         </div>
         <main className="py-16">
           <div className="prose lg:prose-xl mx-auto">
-            <h1> Accudemia's Academic Support Platform</h1>
+            <h1> Accudemia&apos;s Academic Support Platform</h1>
             <p>
             The AccuDemia Academic Support Platform is a dynamic and comprehensive tool designed to provide students with personalized academic support and tutoring services, fostering success and achievement in their educational journey. Embraced by educational institutions globally, AccuDemia offers a range of features tailored to meet the diverse needs of students seeking academic assistance and guidance.
             </p>

@@ -85,21 +85,21 @@ export default function Home() {
             </p>
             <ul>
               <li>
-                <strong>Flexible Learning Environments:</strong> Zoom enables educational institutions to create flexible learning environments that accommodate remote, hybrid, and blended learning models. With Zoom's cloud-based platform, educators can conduct live virtual classes, host guest lectures, and facilitate group discussions, regardless of students' physical locations.
+                <strong>Flexible Learning Environments:</strong> Zoom enables educational institutions to create flexible learning environments that accommodate remote, hybrid, and blended learning models. With Zoom&apos;s cloud-based platform, educators can conduct live virtual classes, host guest lectures, and facilitate group discussions, regardless of students&apos; physical locations.
               </li>
               <li>
                 <strong>Increased Accessibility and Inclusion:</strong> Zoom promotes accessibility and inclusion by providing students with the flexibility to participate in classes and meetings from anywhere, using any internet-enabled device. Students who may have mobility limitations, scheduling conflicts, or other barriers to traditional classroom attendance can engage in learning activities remotely, ensuring equitable access to education.
               </li>
               <li>
-                <strong>Engaging and Interactive Instruction: </strong> Zoom's interactive features and collaboration tools empower educators to deliver engaging and interactive instruction that promotes student engagement and participation. Through live polls, breakout rooms, chat discussions, and multimedia presentations, educators can create dynamic learning experiences that cater to diverse learning styles and preferences.
+                <strong>Engaging and Interactive Instruction: </strong> Zoom&apos;s interactive features and collaboration tools empower educators to deliver engaging and interactive instruction that promotes student engagement and participation. Through live polls, breakout rooms, chat discussions, and multimedia presentations, educators can create dynamic learning experiences that cater to diverse learning styles and preferences.
               </li>
               <li>
-                <strong>Efficient Communication and Collaboration:</strong> Zoom facilitates efficient communication and collaboration among students, faculty, and staff, enabling seamless information sharing, teamwork, and decision-making. Whether holding department meetings, conducting student advising sessions, or collaborating on research projects, users can leverage Zoom's platform to communicate effectively and work collaboratively towards shared goals.
+                <strong>Efficient Communication and Collaboration:</strong> Zoom facilitates efficient communication and collaboration among students, faculty, and staff, enabling seamless information sharing, teamwork, and decision-making. Whether holding department meetings, conducting student advising sessions, or collaborating on research projects, users can leverage Zoom&apos;s platform to communicate effectively and work collaboratively towards shared goals.
               </li>
             </ul>
             <h2>Conclusion</h2>
             <p>
-            In an educational landscape characterized by remote learning, virtual collaboration, and digital communication, Zoom emerges as a versatile and indispensable platform for connecting educators and learners in meaningful ways. By providing intuitive video conferencing and collaboration tools, Zoom empowers educational institutions to create engaging learning environments, foster collaboration, and promote student success in today's interconnected world. Through continued innovation, support, and collaboration with educational stakeholders, Zoom remains committed to advancing education and empowering individuals to connect, communicate, and collaborate effectively, regardless of physical location or distance.
+            In an educational landscape characterized by remote learning, virtual collaboration, and digital communication, Zoom emerges as a versatile and indispensable platform for connecting educators and learners in meaningful ways. By providing intuitive video conferencing and collaboration tools, Zoom empowers educational institutions to create engaging learning environments, foster collaboration, and promote student success in today&apos;s interconnected world. Through continued innovation, support, and collaboration with educational stakeholders, Zoom remains committed to advancing education and empowering individuals to connect, communicate, and collaborate effectively, regardless of physical location or distance.
             </p>
           </div>
         </main>

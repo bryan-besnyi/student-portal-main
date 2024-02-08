@@ -22,7 +22,7 @@
     "canSignIn": true,
     "relatedSoftware": [1,2,3],
     "signInUrl": "https://degreeworks.com",
-    "moreInformationPage":"/websmart",
+    "moreInformationPage":"/degreeWorks",
     "isPopular":true
   },
   {

@@ -74,7 +74,7 @@ export function Navbar () {
             onClick={toggleMenu}
             className="flex items-center px-3 py-2 text-slate-200  hover:text-white "
           >
-            <RxHamburgerMenu className=" z-10 h-5 w-10 m-5  text-black" />
+            <RxHamburgerMenu className=" z-10 h-5 w-10 m-5  text-white" />
           </button>
         </div>
 
@@ -210,12 +210,12 @@ export function Navbar () {
         </NavigationMenuContent> 
       </NavigationMenuItem>
 
-      <NavigationMenuItem>
+      <NavigationMenuItem className="m-2">
         <NavigationMenuTrigger className="text-xs">Tutorials</NavigationMenuTrigger>
         <NavigationMenuContent>
           <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
             {components.map((component) => (
-              <ListItem
+              <ListItem className=""
                 key={component.title}
                 title={component.title}
                 href={component.href}
@@ -227,10 +227,10 @@ export function Navbar () {
         </NavigationMenuContent>
       </NavigationMenuItem>
 
-              <NavigationMenuItem>
+              <NavigationMenuItem className="m-1">
         <Link href="/docs" legacyBehavior passHref>
           <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-            Su
+            Support
           </NavigationMenuLink>
         </Link>
       </NavigationMenuItem>

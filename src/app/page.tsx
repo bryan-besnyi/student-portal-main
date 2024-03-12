@@ -164,7 +164,7 @@ export default function Home() {
               </Card>
             </section>
           </TabsContent>
-          
+
           <TabsContent value="support">
             <section className="container animate-in prose-blue pb-10 lg:prose-xl">
               <h2 className="text-2xl text- pb-3">Student Support Resources</h2>
@@ -268,7 +268,6 @@ export default function Home() {
           </TabsContent>
         </Tabs>
       </main>
-      
     </>
   );
 }

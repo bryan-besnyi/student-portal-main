@@ -1,42 +1,30 @@
 "use client";
-import * as React from "react";
 import Link from "next/link";
-import { useState } from "react";
-import { cn } from "@/lib/utils";
-import { Icons } from "@/components/icons";
-import { RxHamburgerMenu } from "react-icons/rx";
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
-const components: { title: string; href: string; description: string }[] = [
+const navigationLinks: { title: string; href: string }[] = [
   {
-    title: "Navigation Item 1",
-    href: "#",
-    description: "Navigation Item Subtext",
+    title: "WebSMART",
+    href: "https://websmart.smccd.edu/",
   },
   {
-    title: "Navigation Item 2",
-    href: "#",
-    description: "Navigation Item Subtext",
+    title: "WebSchedule",
+    href: "https://webschedule.smccd.edu",
   },
   {
-    title: "Navigation Item 3",
-    href: "#",
-    description: "Navigation Item Subtext",
+    title: "Canvas",
+    href: "https://smccd.instructure.com/",
   },
   {
-    title: "Navigation Item 4",
-    href: "#",
-    description: "Navigation Item Subtext",
+    title: "Support",
+    href: "https://smccd.edu/studenttutorials/",
   },
   {
     title: "Navigation Item 5",
@@ -137,7 +125,27 @@ export function Navbar() {
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
-              
+              {/* <NavigationMenuItem>
+        <Link href="/docs" legacyBehavior passHref>
+          <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            WebSmart
+          </NavigationMenuLink>
+        </Link>
+      </NavigationMenuItem>
+      <NavigationMenuItem>
+        <Link href="/docs" legacyBehavior passHref>
+          <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            WebSchedual
+          </NavigationMenuLink>
+        </Link>
+      </NavigationMenuItem>
+      <NavigationMenuItem>
+        <Link href="/docs" legacyBehavior passHref>
+          <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            Canvas
+          </NavigationMenuLink>
+        </Link>
+      </NavigationMenuItem> */}
               <NavigationMenuItem>
                 <Link href="" passHref>
                   <NavigationMenuLink className="block py-2 pl-3 pr-4 text-[#ffffff] sm:text-xl rounded md:p-0 hover:text-red-700">

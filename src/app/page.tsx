@@ -1,19 +1,18 @@
-"use client";
+import { getAllStudentPortalItems } from "@/lib/api";
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import Image from "next/image";
-import { Navbar } from "./Navbar";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Slider } from "@/components/ui/slider";
-import Link from "next/link";
-import { ExternalLink, Info, KeyRound } from "lucide-react";
-import data from "../app/data.json";
+export async function Home() {
+  let portalItems = null;
+  try {
+    portalItems = await getAllStudentPortalItems();
+    console.log(portalItems);
+  } catch (error) {
+    console.error("Error fetching portal items:", error);
+  }
 
-export default function Home() {
+  // Ensure portalItems is available in the scope for JSX rendering
   return (
     <>
+<<<<<<< HEAD
       <Navbar />
       <main className="bg-gray-100 min-h-screen items-center md:pt-24">
         <section className="h-64 bg-gradient-to-bl from-slate-600 to-indigo-600 flex justify-center items-center">
@@ -268,6 +267,24 @@ export default function Home() {
           </TabsContent>
         </Tabs>
       </main>
+=======
+      {/* Your existing JSX */}
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        {portalItems ? (
+          <ul className="space-y-4 mt-8">
+            {portalItems.map((item) => (
+              <li key={item.sys.id} className="text-lg text-slate-700">
+                {item.softwareTitle}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p>Loading...</p> // Or any other placeholder/fallback content
+        )}
+      </div>
+>>>>>>> e4cc03c (after meeting commit)
     </>
   );
 }
+
+export default Home;

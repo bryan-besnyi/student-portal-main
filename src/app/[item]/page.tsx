@@ -18,7 +18,7 @@ export default async function PortalItemPage({ params }) {
   return (
     <div>
       {portalItem ? (
-        <div className="container mx-auto prose-xl py-16">
+        <div className="container mx-auto prose prose-xl py-16">
           <h1>{portalItem.softwareTitle}</h1>
           <Link
             className={buttonVariants({ variant: "outline" })}

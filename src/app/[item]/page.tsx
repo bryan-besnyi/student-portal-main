@@ -1,4 +1,6 @@
+import { buttonVariants } from "@/components/ui/button";
 import { getStudentPortalItem } from "@/lib/api";
+import Link from "next/link";
 
 export default async function PortalItemPage({ params }) {
   let portalItem = null;
@@ -14,10 +16,15 @@ export default async function PortalItemPage({ params }) {
   return (
     <main>
       {portalItem ? (
-        <div>
-          <h1>Software Title: {portalItem.softwareTitle}</h1>
-          <p>Login URL: {portalItem.loginUrl}</p>
-          <p>Info Slug: {portalItem.infoSlug}</p>
+        <div className="container mx-auto prose-xl py-16">
+          <h1>{portalItem.softwareTitle}</h1>
+          <Link
+            className={buttonVariants({ variant: "outline" })}
+            href={portalItem.loginUrl}
+          >
+            Access {portalItem.softwareTitle}
+          </Link>
+          <p>Info Slug: {portalItem.featured}</p>
           <p>Description: {portalItem.description}</p>
           {portalItem.logo && portalItem.logo.url ? (
             <img

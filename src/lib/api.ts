@@ -6,6 +6,7 @@ const STUDENT_PORTAL_ITEM_GRAPHQL_FIELDS = `
   loginUrl
   infoSlug
   description
+  featured
   logo {
     url
   }
@@ -40,7 +41,7 @@ function extractStudentPortalItemEntries(fetchResponse) {
 export async function getAllStudentPortalItems(isDraftMode = false) {
   const studentPortalItems = await fetchGraphQL(
     `query {
-      studentPortalItemCollection(where:{softwareTitle_exists: true}, preview: ${
+      studentPortalItemCollection(where:{softwareTitle_exists: true}, order: softwareTitle_ASC, preview: ${
         isDraftMode ? "true" : "false"
       }) {
           items {
@@ -56,6 +57,40 @@ export async function getAllStudentPortalItems(isDraftMode = false) {
 
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+export async function getAllFeaturedStudentPortalItems(isDraftMode = false) {
+  const studentPortalItems = await fetchGraphQL(
+    `query {
+      studentPortalItemCollection(where:{featured: true}, order: softwareTitle_ASC, preview: ${
+        isDraftMode ? "true" : "false"
+      }) {
+          items {
+            ${STUDENT_PORTAL_ITEM_GRAPHQL_FIELDS}
+          }
+        }
+      }`,
+    isDraftMode
+  );
+  console.log("Student Portal Items: ", studentPortalItems);
+  return extractStudentPortalItemEntries(studentPortalItems);
+}
+
+export async function getAllUnfeaturedStudentPortalItems(isDraftMode = false) {
+  const studentPortalItems = await fetchGraphQL(
+    `query {
+      studentPortalItemCollection(where:{featured: false}, order: softwareTitle_ASC, preview: ${
+        isDraftMode ? "true" : "false"
+      }) {
+          items {
+            ${STUDENT_PORTAL_ITEM_GRAPHQL_FIELDS}
+          }
+        }
+      }`,
+    isDraftMode
+  );
+  console.log("Student Portal Items: ", studentPortalItems);
+  return extractStudentPortalItemEntries(studentPortalItems);
 }
 
 export async function getStudentPortalItem(infoSlug, isDraftMode = false) {

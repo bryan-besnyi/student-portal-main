@@ -6,7 +6,6 @@ const STUDENT_PORTAL_ITEM_GRAPHQL_FIELDS = `
   loginUrl
   infoSlug
   description
-  fullDescription
   logo {
     url
   }
@@ -51,17 +50,17 @@ export async function getAllStudentPortalItems(isDraftMode = false) {
       }`,
     isDraftMode
   );
+  console.log("Student Portal Items: " + studentPortalItems);
   return extractStudentPortalItemEntries(studentPortalItems);
 }
 
-// Todo fix the primary key so we aint doin this bullshit
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
 export async function getStudentPortalItem(softwareTitle, isDraftMode = false) {
   const adjustedSoftwareTitle = capitalizeFirstLetter(softwareTitle);
-  console;
+
   const query = `query {
     studentPortalItemCollection(where: {softwareTitle: "${adjustedSoftwareTitle}"}, limit: 1, preview: ${
     isDraftMode ? "true" : "false"

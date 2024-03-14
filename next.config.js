@@ -4,5 +4,8 @@ const nextConfig = {};
 module.exports = nextConfig;
 
 module.exports = {
-  // Other configuration options...
+  // allow images from images.ctfassets.net
+  images: {
+    domains: ["images.ctfassets.net"],
+  },
 };

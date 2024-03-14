@@ -27,34 +27,38 @@ export async function Home() {
       <section aria-label="Applications" className="container py-16 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {portalItems.map((item) => (
-            <Card key={item.softwareTitle}>
-              <CardHeader className="max-w-full h-48 ">
-                <Image
-                  src={item.logo.url}
-                  width={400}
-                  height={400}
-                  className="mx-auto object-cover"
-                  alt={`${item.softwareTitle} logo`}
-                />
-              </CardHeader>
-              <CardContent>
-                <CardTitle>{item.softwareTitle}</CardTitle>
-                <CardDescription>{item.description}</CardDescription>
-              </CardContent>
-              <CardFooter className="flex justify-end gap-3">
-                <Link
-                  href={item.infoSlug}
-                  className={buttonVariants({ variant: "outline" })}
-                >
-                  Get info
-                </Link>
-                <Link
-                  href={item.loginUrl}
-                  className={buttonVariants({ variant: "secondary" })}
-                >
-                  Log in/Access
-                </Link>
-              </CardFooter>
+            <Card key={item.infoSlug}>
+              <div className="flex flex-col justify-between h-full">
+                <div>
+                  <CardHeader className="max-w-full h-48 ">
+                    <Image
+                      src={item.logo.url}
+                      width={400}
+                      height={400}
+                      className="mx-auto object-cover"
+                      alt={`${item.softwareTitle} logo`}
+                    />
+                  </CardHeader>
+                  <CardContent>
+                    <CardTitle>{item.softwareTitle}</CardTitle>
+                    <CardDescription>{item.description}</CardDescription>
+                  </CardContent>
+                </div>
+                <CardFooter className="mt-auto flex justify-end gap-3">
+                  <Link
+                    href={item.infoSlug}
+                    className={buttonVariants({ variant: "outline" })}
+                  >
+                    Get info
+                  </Link>
+                  <Link
+                    href={item.loginUrl}
+                    className={buttonVariants({ variant: "secondary" })}
+                  >
+                    Log in/Access
+                  </Link>
+                </CardFooter>
+              </div>
             </Card>
           ))}
         </div>

@@ -1,6 +1,8 @@
 import { buttonVariants } from "@/components/ui/button";
 import { getStudentPortalItem } from "@/lib/api";
 import Link from "next/link";
+import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
+import { info } from "console";
 
 export default async function PortalItemPage({ params }) {
   let portalItem = null;
@@ -14,7 +16,7 @@ export default async function PortalItemPage({ params }) {
   }
 
   return (
-    <main>
+    <div>
       {portalItem ? (
         <div className="container mx-auto prose-xl py-16">
           <h1>{portalItem.softwareTitle}</h1>
@@ -24,7 +26,6 @@ export default async function PortalItemPage({ params }) {
           >
             Access {portalItem.softwareTitle}
           </Link>
-          <p>Info Slug: {portalItem.featured}</p>
           <p>Description: {portalItem.description}</p>
           {portalItem.logo && portalItem.logo.url ? (
             <img
@@ -32,11 +33,19 @@ export default async function PortalItemPage({ params }) {
               alt={`${portalItem.softwareTitle} logo`}
             />
           ) : null}
-          {/* Assuming infoPageContent is rich text, displaying it might require parsing */}
+          <div className="prose-xl">
+            {portalItem.infoPageContent && portalItem.infoPageContent.json ? (
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: documentToHtmlString(portalItem.infoPageContent.json),
+                }}
+              />
+            ) : null}
+          </div>
         </div>
       ) : (
         <p>Portal item not found or failed to load.</p>
       )}
-    </main>
+    </div>
   );
 }

@@ -35,7 +35,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        <main className="bg-gray-100">{children}</main>
+        <main className="bg-gray-50">{children}</main>
       </body>
     </html>
   );

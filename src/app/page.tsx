@@ -4,7 +4,7 @@ import {
   getAllUnfeaturedStudentPortalItems,
 } from "@/lib/api";
 import Image from "next/image";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 

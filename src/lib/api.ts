@@ -7,6 +7,9 @@ const STUDENT_PORTAL_ITEM_GRAPHQL_FIELDS = `
   infoSlug
   description
   featured
+  infoPageContent {
+    json
+  }
   logo {
     url
   }

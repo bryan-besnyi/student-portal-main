@@ -6,6 +6,7 @@ const STUDENT_PORTAL_ITEM_GRAPHQL_FIELDS = `
   loginUrl
   infoSlug
   description
+  fullDescription
   logo {
     url
   }

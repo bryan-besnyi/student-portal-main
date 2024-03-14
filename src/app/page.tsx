@@ -1,4 +1,5 @@
 import { getAllStudentPortalItems } from "@/lib/api";
+import { Card } from "@/components/Card";
 
 export async function Home() {
   let portalItems = null;
@@ -9,9 +10,9 @@ export async function Home() {
     console.error("Error fetching portal items:", error);
   }
 
-  // Ensure portalItems is available in the scope for JSX rendering
   return (
     <>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <Navbar />
       <main className="bg-gray-100 min-h-screen items-center md:pt-24">
@@ -269,12 +270,15 @@ export async function Home() {
       </main>
 =======
       {/* Your existing JSX */}
+=======
+>>>>>>> 701dd7d (...)
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {portalItems ? (
           <ul className="space-y-4 mt-8">
             {portalItems.map((item) => (
               <li key={item.sys.id} className="text-lg text-slate-700">
                 {item.softwareTitle}
+                {item.description}
               </li>
             ))}
           </ul>

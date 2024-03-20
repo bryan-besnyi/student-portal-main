@@ -11,10 +11,14 @@ import {
   TableCell,
   TableHead,
   TableRow,
+  TableHeader,
 } from "@/components/ui/table";
 
 export default async function FormsPage() {
   const departmentsWithForms = await getAllDepartmentsWithForms();
+
+  // Sort departments alphabetically by name
+  departmentsWithForms.sort((a, b) => a.name.localeCompare(b.name));
 
   return (
     <div className="container">
@@ -29,12 +33,12 @@ export default async function FormsPage() {
                 </AccordionTrigger>
                 <AccordionContent>
                   <Table>
-                    <TableHead>
+                    <TableHeader>
                       <TableRow>
-                        <TableCell>Name</TableCell>
-                        <TableCell>Description</TableCell>
+                        <TableHead className="w-1/3">Name</TableHead>
+                        <TableHead className="w-2/3">Description</TableHead>
                       </TableRow>
-                    </TableHead>
+                    </TableHeader>
                     <TableBody>
                       {department.forms.map((form) => (
                         <TableRow key={form.id}>

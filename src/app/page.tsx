@@ -7,6 +7,7 @@ import Image from "next/image";
 import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
+import HomeHero from "@/components/HomeHero";
 
 import {
   Card,
@@ -34,7 +35,7 @@ export async function Home() {
 
   return (
     <>
-      <h1>Student Portal</h1>
+      <HomeHero />
       <section aria-label="Applications" className="container py-16 mx-auto">
         <h2 className="text-3xl font-sans font-bold mb-5 text-gray-400">
           Featured Applications
@@ -57,7 +58,7 @@ export async function Home() {
                       src={item.logo.url}
                       width={400}
                       height={400}
-                      className="object-cover"
+                      className="object-contain"
                       alt={`${item.softwareTitle} logo`}
                     />
                   </CardHeader>
@@ -99,7 +100,7 @@ export async function Home() {
                       src={item.logo.url}
                       width={400}
                       height={400}
-                      className="object-cover"
+                      className="object-contain"
                       alt={`${item.softwareTitle} logo`}
                     />
                   </CardHeader>

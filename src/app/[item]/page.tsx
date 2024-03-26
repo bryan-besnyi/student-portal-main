@@ -2,7 +2,6 @@ import { buttonVariants } from "@/components/ui/button";
 import { getStudentPortalItem } from "@/lib/api";
 import Link from "next/link";
 import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
-import { info } from "console";
 
 export default async function PortalItemPage({ params }) {
   let portalItem = null;

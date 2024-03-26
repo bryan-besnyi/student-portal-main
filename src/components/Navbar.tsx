@@ -11,6 +11,17 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
+import { Button } from "@/components/ui/button";
 
 export default function NavigationMenuDemo() {
   return (
@@ -18,6 +29,22 @@ export default function NavigationMenuDemo() {
       <Link href="/" legacyBehavior passHref>
         <Image src="/logo.svg" alt="Logo" width={250} height={250} />
       </Link>
+      <Drawer>
+        <DrawerTrigger className="md:hidden">Open</DrawerTrigger>
+        <DrawerContent>
+          <DrawerHeader>
+            <Link href="/forms">Forms</Link>
+            <a href="https://websmart.smccd.edu">WebSMART</a>\
+            <a href="https://webschedule.smccd.edu">WebSchedule</a>
+            <a href="https://smccd.edu">SMCCD Website</a>
+          </DrawerHeader>
+          <DrawerFooter>
+            <DrawerClose>
+              <Button variant="outline">Cancel</Button>
+            </DrawerClose>
+          </DrawerFooter>
+        </DrawerContent>
+      </Drawer>
       <NavigationMenu>
         <NavigationMenuList className="gap-5">
           <NavigationMenuItem>

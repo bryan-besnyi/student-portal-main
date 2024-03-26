@@ -4,9 +4,9 @@ import {
   getAllUnfeaturedStudentPortalItems,
 } from "@/lib/api";
 import Image from "next/image";
-import { buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/app/components/ui/button";
 import Link from "next/link";
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "@/app/components/ui/badge";
 import HomeHero from "@/components/HomeHero";
 
 import {
@@ -16,7 +16,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from "@/app/components/ui/card";
 
 export async function Home() {
   let portalItems = [];

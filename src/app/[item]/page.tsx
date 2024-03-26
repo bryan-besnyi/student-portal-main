@@ -1,4 +1,4 @@
-import { buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/app/components/ui/button";
 import { getStudentPortalItem } from "@/lib/api";
 import Link from "next/link";
 import { documentToHtmlString } from "@contentful/rich-text-html-renderer";

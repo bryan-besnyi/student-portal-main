@@ -17,7 +17,6 @@ import {
 export default async function FormsPage() {
   const departmentsWithForms = await getAllDepartmentsWithForms();
 
-  // Sort departments alphabetically by name
   departmentsWithForms.sort((a, b) => a.name.localeCompare(b.name));
 
   return (

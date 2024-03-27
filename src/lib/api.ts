@@ -58,6 +58,8 @@ const STUDENT_PORTAL_ITEM_MINIMAL_FIELDS = `
     id
   }
   softwareTitle
+  loginUrl
+  infoSlug
   logo {
     url
   }

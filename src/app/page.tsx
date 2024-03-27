@@ -48,7 +48,7 @@ export async function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {portalItems &&
             portalItems.map((item) => (
-              <Card key={item.infoSlug}>
+              <Card key={item.title}>
                 <div className="flex flex-col justify-between h-full">
                   <div className="flex justify-end p-5 -mb-10">
                     <Badge
@@ -76,18 +76,22 @@ export async function Home() {
                     </CardContent>
                   </div>
                   <CardFooter className="mt-auto flex justify-end gap-3">
-                    <Link
-                      href={item.infoSlug}
-                      className={buttonVariants({ variant: "outline" })}
-                    >
-                      Get info
-                    </Link>
-                    <Link
-                      href={item.loginUrl}
-                      className={buttonVariants({ variant: "secondary" })}
-                    >
-                      Log in/Access
-                    </Link>
+                    {item.infoSlug && (
+                      <Link
+                        href={item.infoSlug}
+                        className={buttonVariants({ variant: "outline" })}
+                      >
+                        Get info
+                      </Link>
+                    )}
+                    {item.loginUrl && (
+                      <Link
+                        href={item.loginUrl}
+                        className={buttonVariants({ variant: "secondary" })}
+                      >
+                        Log in/Access
+                      </Link>
+                    )}
                   </CardFooter>
                 </div>
               </Card>
@@ -99,7 +103,7 @@ export async function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {otherPortalItems &&
             otherPortalItems.map((item) => (
-              <Card key={item.infoSlug}>
+              <Card key={item.title}>
                 <div className="flex flex-col justify-between h-full">
                   <div>
                     <CardHeader className="max-w-full h-48 overflow-hidden">
@@ -119,18 +123,22 @@ export async function Home() {
                     </CardContent>
                   </div>
                   <CardFooter className="mt-auto flex justify-end gap-3">
-                    <Link
-                      href={item.infoSlug}
-                      className={buttonVariants({ variant: "outline" })}
-                    >
-                      Get info
-                    </Link>
-                    <Link
-                      href={item.loginUrl}
-                      className={buttonVariants({ variant: "secondary" })}
-                    >
-                      Log in/Access
-                    </Link>
+                    {item.infoSlug && (
+                      <Link
+                        href={item.infoSlug}
+                        className={buttonVariants({ variant: "outline" })}
+                      >
+                        Get info
+                      </Link>
+                    )}
+                    {item.loginUrl && (
+                      <Link
+                        href={item?.loginUrl}
+                        className={buttonVariants({ variant: "secondary" })}
+                      >
+                        Log in/Access
+                      </Link>
+                    )}
                   </CardFooter>
                 </div>
               </Card>

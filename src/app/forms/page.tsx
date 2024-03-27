@@ -20,10 +20,14 @@ export default async function FormsPage() {
   departmentsWithForms.sort((a, b) => a.name.localeCompare(b.name));
 
   return (
-    <div className="container">
-      <h1>Forms</h1>
+    <div className="container py-10">
+      <h1 className="text-center mt-6 text-3xl">Student Forms Hub</h1>
+      <p className="font-extralight italic text-center mx-auto w-3/4 mt-4">
+        Navigating college administration can be a complex task, but we&apos;re
+        here to make it as smooth as possible.
+      </p>
       {departmentsWithForms ? (
-        <div>
+        <div className="mt-8">
           {departmentsWithForms.map((department) => (
             <Accordion type="single" collapsible key={department.id}>
               <AccordionItem value={department.name}>

@@ -13,6 +13,22 @@ const STUDENT_PORTAL_ITEM_GRAPHQL_FIELDS = `
   logo {
     url
   }
+  relatedTutorialCollection {
+    items {
+      sys { id }
+      ... on StudentTutorial {
+        title
+        slug
+        description
+        featuredImage {
+          url
+        }
+        content {
+          json
+        }
+      }
+    }
+  }
 `;
 
 const STUDENT_FORM_ITEM_GRAPHQL_FIELDS = `
@@ -33,6 +49,17 @@ const STUDENT_FORM_ITEM_GRAPHQL_FIELDS = `
     ... on Department {
       name
     }
+  }
+`;
+
+// Fetch only the necessary fields for the listing
+const STUDENT_PORTAL_ITEM_MINIMAL_FIELDS = `
+  sys {
+    id
+  }
+  softwareTitle
+  logo {
+    url
   }
 `;
 
@@ -90,7 +117,7 @@ export async function getAllFeaturedStudentPortalItems(isDraftMode = false) {
         isDraftMode ? "true" : "false"
       }) {
           items {
-            ${STUDENT_PORTAL_ITEM_GRAPHQL_FIELDS}
+            ${STUDENT_PORTAL_ITEM_MINIMAL_FIELDS}
           }
         }
       }`,
@@ -107,7 +134,7 @@ export async function getAllUnfeaturedStudentPortalItems(isDraftMode = false) {
         isDraftMode ? "true" : "false"
       }) {
           items {
-            ${STUDENT_PORTAL_ITEM_GRAPHQL_FIELDS}
+            ${STUDENT_PORTAL_ITEM_MINIMAL_FIELDS}
           }
         }
       }`,
@@ -128,19 +155,22 @@ export async function getStudentPortalItem(infoSlug, isDraftMode = false) {
     }
   }`;
 
-  console.log("QUERY: " + query);
+  // ... (rest of your function including fetching and error handling)
 
-  // Debug: Log the complete query string to verify correctness
-  console.log("Constructed GraphQL Query:", query);
+  const response = await fetchGraphQL(query, isDraftMode);
 
-  // Fetch the data using the constructed query
-  const studentPortalItem = await fetchGraphQL(query, isDraftMode);
+  if (response.errors) {
+    // Handle errors
+  }
 
-  // Debug: Log the raw response from Contentful
-  console.log("Contentful Response:", studentPortalItem);
+  const item = response.data?.studentPortalItemCollection?.items[0];
+  if (item) {
+    // Handle tutorials data if present
+    const tutorials = item.relatedTutorialCollection?.items || [];
+    return { ...item, tutorials };
+  }
 
-  // Extract and return the student portal item entry
-  return extractStudentPortalItemEntries(studentPortalItem)[0];
+  return null; // or appropriate error handling
 }
 
 function extractStudentFormItemEntries(response) {
@@ -232,4 +262,41 @@ export async function getAllDepartmentsWithForms(isDraftMode = false) {
 
   // Convert the object to an array of departments with their forms
   return Object.values(formsByDepartment);
+}
+
+export async function getTutorialBySlug(slug, isDraftMode = false) {
+  const query = `query {
+    studentTutorialCollection(where: {slug: "${slug}"}, preview: ${
+    isDraftMode ? "true" : "false"
+  }) {
+      items {
+        sys {
+          id
+        }
+        title
+        slug
+        description
+        content {
+          json
+        }
+        featuredImage {
+          url
+        }
+      }
+    }
+  }`;
+
+  const response = await fetchGraphQL(query, isDraftMode);
+
+  if (response.errors) {
+    console.error("Error fetching tutorial by slug:", response.errors);
+    throw new Error(response.errors.map((e) => e.message).join("\n"));
+  }
+
+  const tutorial = response.data?.studentTutorialCollection?.items[0];
+  if (!tutorial) {
+    throw new Error(`Tutorial with slug "${slug}" not found`);
+  }
+
+  return tutorial;
 }

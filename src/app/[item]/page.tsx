@@ -7,7 +7,6 @@ import {
   CardContent,
   CardDescription,
   CardFooter,
-  CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import {
@@ -18,7 +17,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-export default async function PortalItemPage({ params }) {
+export default async function PortalItemPage({ params }: { params: any }) {
   let portalItem = null;
 
   try {

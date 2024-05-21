@@ -14,8 +14,24 @@ import {
   TableHeader,
 } from "@/components/ui/table";
 
+interface Form {
+  id: string;
+  formTitle: string;
+  description: string;
+  file: {
+    url: string;
+  };
+}
+
+interface Department {
+  id: string;
+  name: string;
+  forms: Form[];
+}
+
 export default async function FormsPage() {
-  const departmentsWithForms = await getAllDepartmentsWithForms();
+  const departmentsWithForms: Department[] =
+    (await getAllDepartmentsWithForms()) as Department[];
 
   departmentsWithForms.sort((a, b) => a.name.localeCompare(b.name));
 

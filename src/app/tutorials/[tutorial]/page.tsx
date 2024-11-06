@@ -1,5 +1,3 @@
-// app/[tutorial]/page.tsx
-
 import { getTutorialBySlug } from "@/lib/api";
 import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
 
@@ -15,17 +13,15 @@ export default async function TutorialPage({ params }) {
     }
   } catch (error) {
     console.error("Error fetching tutorial:", error);
-    // Handle error appropriately...
   }
 
   return (
     <div>
       {tutorial ? (
         <div className="container mx-auto">
-          <article className="prose">
+          <article className="prose-lg mx-auto">
             <h1>{tutorial.title}</h1>
             <div dangerouslySetInnerHTML={{ __html: tutorialHtml }} />
-            {/* Render featured image and other content as needed */}
           </article>
         </div>
       ) : (

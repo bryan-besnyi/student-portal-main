@@ -21,10 +21,12 @@ export default async function TutorialPage({ params }) {
   return (
     <div>
       {tutorial ? (
-        <div className="prose">
-          <h1>{tutorial.title}</h1>
-          <div dangerouslySetInnerHTML={{ __html: tutorialHtml }} />
-          {/* Render featured image and other content as needed */}
+        <div className="container mx-auto">
+          <article className="prose">
+            <h1>{tutorial.title}</h1>
+            <div dangerouslySetInnerHTML={{ __html: tutorialHtml }} />
+            {/* Render featured image and other content as needed */}
+          </article>
         </div>
       ) : (
         <p>Tutorial not found.</p>

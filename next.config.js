@@ -1,11 +1,15 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-module.exports = nextConfig;
-
-module.exports = {
-  // allow images from images.ctfassets.net
+const nextConfig = {
   images: {
-    domains: ["images.ctfassets.net"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.ctfassets.net",
+        // You can specify a pathname if needed, like "/path/to/images/*"
+        pathname: "/**",
+      },
+    ],
   },
 };
+
+module.exports = nextConfig;

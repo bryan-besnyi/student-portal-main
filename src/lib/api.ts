@@ -270,16 +270,26 @@ export async function getTutorialBySlug(slug, isDraftMode = false) {
   const query = `query {
     studentTutorialCollection(where: {slug: "${slug}"}, preview: ${
     isDraftMode ? "true" : "false"
-  }) {
+  }, limit: 1) {
       items {
-        sys {
-          id
-        }
+        sys { id }
         title
         slug
         description
         content {
           json
+          links {
+          assets {
+            block {
+              sys {
+                id
+              }
+              url
+              title
+              description
+            }
+          }
+        }
         }
         featuredImage {
           url
@@ -299,6 +309,8 @@ export async function getTutorialBySlug(slug, isDraftMode = false) {
   if (!tutorial) {
     throw new Error(`Tutorial with slug "${slug}" not found`);
   }
+
+  console.log("Tutorial Content JSON:", tutorial.content.json); // Check JSON structure for assets
 
   return tutorial;
 }

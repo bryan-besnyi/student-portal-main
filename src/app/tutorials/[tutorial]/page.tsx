@@ -21,7 +21,7 @@ export default async function TutorialPage({ params }) {
   return (
     <div>
       {tutorial ? (
-        <div className="tutorial-content">
+        <div className="prose">
           <h1>{tutorial.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: tutorialHtml }} />
           {/* Render featured image and other content as needed */}

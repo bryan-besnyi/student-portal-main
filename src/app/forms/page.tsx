@@ -80,7 +80,7 @@ export default async function FormsPage() {
           ))}
         </div>
       ) : (
-        <p>Departments not found or failed to load.</p>
+        <p>Forms failed to load.</p>
       )}
     </div>
   );

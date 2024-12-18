@@ -1,6 +1,6 @@
 import { getTutorialBySlug } from "@/lib/api";
 import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
-import options from "@/lib/contentful-renderer"; // Import the updated options
+import options from "@/lib/contentful-renderer";
 
 export default async function TutorialPage({ params }) {
   let tutorial = null;

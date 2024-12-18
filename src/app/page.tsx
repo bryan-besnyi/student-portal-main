@@ -23,6 +23,7 @@ import {
  * Each item is rendered as a Card component with its logo, title, description, and links.
  * @returns The rendered Home page component.
  */
+
 export default async function Home() {
   let portalItems = [];
   let otherPortalItems = [];
